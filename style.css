@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+}
+#reader {
+  width: 320px;
+  margin: auto;
+}
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: inline-block;
+}
+#history-section {
+  margin-top: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+#history-list {
+  list-style-type: none;
+  padding: 0;
+}
+#history-list li {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button.copy-btn {
+  padding: 5px 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button.copy-btn:hover {
+  background: #218838;
+}
+#clear-history-btn,
+#clear-selected-btn {
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#clear-history-btn:hover {
+  background-color: #c82333;
+}
+#clear-selected-btn {
+  background-color: #ffc107;
+  color: black;
+  margin-left: 10px;
+}
+#clear-selected-btn:hover {
+  background-color: #e0a800;
+}
+select {
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.history-checkbox {
+  margin-right: 10px;
+}

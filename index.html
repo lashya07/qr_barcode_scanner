@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Realtime Barcode & QR Scanner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+<body>
+
+  <h2>Realtime Barcode & QR Scanner</h2>
+
+  <label for="filter">Filter:</label>
+  <select id="filter">
+    <option value="all">All</option>
+    <option value="qr">QR Code only</option>
+    <option value="barcode">Barcode only</option>
+  </select>
+
+  <div id="reader"></div>
+
+  <div id="output">
+    <strong>Scanned Code:</strong>
+    <p id="result">Waiting...</p>
+  </div>
+
+  <div id="history-section">
+    <h3>Scan History</h3>
+    <ul id="history-list"></ul>
+    <button id="clear-history-btn">Clear History</button>
+    <button id="clear-selected-btn">Clear Selected</button>
+  </div>
+
+  <audio id="beep" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
